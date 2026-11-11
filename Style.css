@@ -1,0 +1,1145 @@
+
+/* ==========================================
+   STORIES START WITH US | BOOK DASH
+   COMPLETE CAMPAIGN WEBSITE STYLESHEET
+   FLEXBOX RESPONSIVE DESIGN
+========================================== */
+
+
+/* 1. GOOGLE FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Poppins:wght@500;600;700;800;900&display=swap');
+
+
+/* 2. CAMPAIGN COLOUR PALETTE */
+
+:root {
+    --orange: #F47721;
+    --yellow: #FFD447;
+    --blue: #42B6E8;
+    --green: #73BD65;
+
+    --dark-blue: #173B5E;
+    --cream: #FFF9ED;
+    --white: #FFFFFF;
+    --text: #344454;
+
+    --light-orange: #FFF1D2;
+    --light-blue: #EAF7FC;
+    --light-green: #EAF7E7;
+}
+
+
+/* 3. GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--cream);
+    color: var(--text);
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* 4. TYPOGRAPHY */
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(2.3rem, 5vw, 4rem);
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--orange);
+}
+
+h2 {
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    color: var(--dark-blue);
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: var(--orange);
+    margin-bottom: 12px;
+}
+
+p {
+    max-width: 850px;
+    margin: 0 auto 20px;
+    font-size: 1.05rem;
+    text-align: center;
+}
+
+strong {
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+
+
+/* 5. HEADER AND LOGO */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--white);
+    padding: 18px 7%;
+    border-bottom: 5px solid var(--yellow);
+}
+
+header img {
+    width: 160px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* 6. MAIN CONTENT */
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+/* 7. GENERAL SECTION FLEXBOX */
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding: 85px 8%;
+    text-align: center;
+}
+
+section h1,
+section h2,
+section h3,
+section p {
+    width: 100%;
+}
+
+section p {
+    max-width: 850px;
+}
+
+
+/* 8. HOME SECTION */
+
+#home {
+    background-color: var(--light-orange);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#home h1 {
+    color: var(--orange);
+}
+
+#home h2 {
+    color: var(--dark-blue);
+}
+
+
+/* 9. WHY STORIES MATTER SECTION */
+
+#why-stories-matter {
+    background-color: var(--white);
+}
+
+#why-stories-matter h1 {
+    color: var(--blue);
+}
+
+#why-stories-matter h2 {
+    color: var(--dark-blue);
+}
+
+
+/* 10. ABOUT BOOK DASH SECTION */
+
+#about-book-dash {
+    background-color: var(--light-green);
+}
+
+#about-book-dash h1 {
+    color: #4D9E46;
+}
+
+#about-book-dash h2 {
+    color: var(--dark-blue);
+}
+
+
+/* 11. EXPLORE FREE BOOKS SECTION */
+
+#explore-books {
+    background-color: var(--light-blue);
+}
+
+#explore-books h1 {
+    color: #249ACB;
+}
+
+#explore-books h2 {
+    color: var(--dark-blue);
+}
+
+
+/* 12. GET INVOLVED SECTION */
+
+#get-involved {
+    background-color: var(--light-orange);
+}
+
+#get-involved h1 {
+    color: var(--orange);
+}
+
+#get-involved h2 {
+    color: var(--dark-blue);
+}
+
+
+/* 13. IMAGE FLEXBOX STYLING */
+
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+    width: 100%;
+    max-width: 650px;
+    margin: 35px auto;
+}
+
+figure img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+    max-height: 430px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+    border: 6px solid var(--white);
+
+    box-shadow: 0 8px 22px rgba(23, 59, 94, 0.12);
+}
+
+figcaption {
+    color: #647486;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+/* 14. BOOK GALLERY FLEXBOX */
+
+.book-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+
+    gap: 30px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.book-gallery figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    flex: 1 1 220px;
+    max-width: 280px;
+    margin: 0;
+}
+
+.book-gallery img {
+    width: 100%;
+    height: 300px;
+
+    object-fit: contain;
+    background-color: var(--white);
+    padding: 10px;
+
+    border-radius: 18px;
+}
+
+
+/* 15. LIST FLEXBOX STYLING */
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    width: 100%;
+    max-width: 850px;
+
+    margin: 25px auto 35px;
+    padding-left: 28px;
+
+    text-align: left;
+}
+
+li {
+    margin-bottom: 10px;
+    padding-left: 8px;
+}
+
+li::marker {
+    color: var(--orange);
+}
+
+li strong {
+    color: var(--dark-blue);
+}
+
+
+/* 16. BUTTON STYLING */
+
+a[href] {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--orange);
+    color: var(--white);
+
+    text-decoration: none;
+    text-align: center;
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+
+    padding: 14px 30px;
+    margin: 12px 8px;
+
+    border-radius: 50px;
+    border: 3px solid transparent;
+
+    box-shadow: 0 5px 0 #C75B15;
+
+    transition: 0.2s ease;
+}
+
+
+/* BUTTON HOVER EFFECT */
+
+a[href]:hover {
+    background-color: var(--yellow);
+    color: var(--dark-blue);
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 0 #D8AA28;
+}
+
+
+/* BUTTON CLICK EFFECT */
+
+a[href]:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #C75B15;
+}
+
+
+/* KEYBOARD ACCESSIBILITY */
+
+a[href]:focus-visible {
+    outline: 4px solid var(--dark-blue);
+    outline-offset: 4px;
+}
+
+
+/* 17. DIFFERENT SECTION BUTTON COLOURS */
+
+/* HOME BUTTON */
+
+#home a {
+    background-color: var(--orange);
+    box-shadow: 0 5px 0 #C75B15;
+}
+
+
+/* WHY STORIES MATTER BUTTON */
+
+#why-stories-matter a {
+    background-color: var(--blue);
+    box-shadow: 0 5px 0 #2185AD;
+}
+
+
+/* ABOUT BOOK DASH BUTTON */
+
+#about-book-dash a {
+    background-color: var(--green);
+    box-shadow: 0 5px 0 #4B9144;
+}
+
+
+/* EXPLORE BOOKS BUTTON */
+
+#explore-books a {
+    background-color: var(--blue);
+    box-shadow: 0 5px 0 #2185AD;
+}
+
+
+/* GET INVOLVED BUTTON */
+
+#get-involved a {
+    background-color: var(--orange);
+    box-shadow: 0 5px 0 #C75B15;
+}
+
+
+/* 18. BUTTON HOVER COLOURS */
+
+#home a:hover,
+#get-involved a:hover {
+    background-color: var(--yellow);
+    color: var(--dark-blue);
+    box-shadow: 0 8px 0 #D8AA28;
+}
+
+#why-stories-matter a:hover,
+#explore-books a:hover {
+    background-color: var(--yellow);
+    color: var(--dark-blue);
+    box-shadow: 0 8px 0 #D8AA28;
+}
+
+#about-book-dash a:hover {
+    background-color: var(--yellow);
+    color: var(--dark-blue);
+    box-shadow: 0 8px 0 #D8AA28;
+}
+
+
+/* 19. BUTTON GROUP FLEXBOX */
+
+section p:has(a) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+/* 20. TABLET RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 60px 6%;
+    }
+
+    #home {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    figure {
+        margin: 25px auto;
+    }
+
+    figure img {
+        border-radius: 18px;
+    }
+
+    .book-gallery {
+        gap: 20px;
+    }
+
+    .book-gallery figure {
+        flex: 1 1 200px;
+    }
+
+    a[href] {
+        padding: 12px 24px;
+        font-size: 0.95rem;
+    }
+
+}
+
+
+/* 21. MOBILE RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+
+    section {
+        padding: 50px 5%;
+    }
+
+    .book-gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book-gallery figure {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    section p:has(a) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section p:has(a) a {
+        width: fit-content;
+        max-width: 100%;
+    }
+
+}
+
+
+/* 22. SMALL MOBILE SCREENS */
+
+@media (max-width: 480px) {
+
+    section {
+        padding: 45px 5%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    header img {
+        width: 135px;
+    }
+
+    a[href] {
+        padding: 12px 22px;
+        font-size: 0.95rem;
+    }
+
+    ul {
+        padding-left: 22px;
+    }
+
+}
+
+
+/* 23. REDUCED MOTION ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    a[href] {
+        transition: none;
+    }
+
+}
+
+/* WEBSITE FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+
+    background-color: #173B5E;
+    color: #FFFFFF;
+    padding: 50px 8%;
+}
+
+footer h2 {
+    color: #FFD447;
+}
+
+footer p {
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+footer a {
+    background-color: #F47721;
+    color: #FFFFFF;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+/* PAGE NAVIGATION */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    color: #173B5E;
+    text-decoration: none;
+    font-weight: 800;
+    padding: 10px 15px;
+    border-radius: 25px;
+}
+
+nav a:hover {
+    background-color: #FFD447;
+    color: #173B5E;
+}
+
+#menuButton {
+    display: none;
+    background-color: #F47721;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    #menuButton {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+/* ==================================================
+   STORIES START WITH US
+   ADVANCED VISUAL EFFECTS AND ANIMATIONS
+================================================== */
+
+
+/* 1. SMOOTH WEBSITE EXPERIENCE */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/* 2. BEAUTIFUL SECTION BACKGROUNDS */
+
+#home {
+    background:
+        radial-gradient(circle at 10% 15%, rgba(255, 212, 71, 0.35), transparent 25%),
+        radial-gradient(circle at 90% 80%, rgba(66, 182, 232, 0.20), transparent 25%),
+        #FFF1D2;
+    position: relative;
+    overflow: hidden;
+}
+
+#why-stories-matter {
+    background:
+        radial-gradient(circle at 90% 10%, rgba(66, 182, 232, 0.13), transparent 25%),
+        #FFFFFF;
+}
+
+#about-book-dash {
+    background:
+        radial-gradient(circle at 10% 90%, rgba(115, 189, 101, 0.18), transparent 25%),
+        #EAF7E7;
+}
+
+#explore-books {
+    background:
+        radial-gradient(circle at 85% 15%, rgba(255, 212, 71, 0.25), transparent 25%),
+        #EAF7FC;
+}
+
+#get-involved {
+    background:
+        radial-gradient(circle at 10% 15%, rgba(244, 119, 33, 0.13), transparent 25%),
+        #FFF1D2;
+}
+
+
+/* 3. FLOATING DECORATIVE SHAPES */
+
+#home::before,
+#home::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+    animation: floatDecoration 6s ease-in-out infinite;
+}
+
+#home::before {
+    width: 110px;
+    height: 110px;
+    background: rgba(255, 212, 71, 0.45);
+    top: 12%;
+    left: -35px;
+}
+
+#home::after {
+    width: 75px;
+    height: 75px;
+    background: rgba(66, 182, 232, 0.25);
+    bottom: 12%;
+    right: 5%;
+    animation-delay: 2s;
+}
+
+/* Keep homepage content above decorations */
+
+#home > * {
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes floatDecoration {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-18px) rotate(12deg);
+    }
+}
+
+
+/* 4. FLOATING BOOK AND STAR DECORATIONS */
+
+.floating-book,
+.floating-star {
+    display: inline-block;
+    animation: floatingElements 4s ease-in-out infinite;
+}
+
+.floating-star {
+    animation-delay: 1s;
+}
+
+@keyframes floatingElements {
+    0%, 100% {
+        transform: translateY(0) rotate(-5deg);
+    }
+
+    50% {
+        transform: translateY(-12px) rotate(5deg);
+    }
+}
+
+
+/* 5. ATTRACTIVE INTERACTIVE BUTTONS */
+
+a[href] {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease;
+}
+
+/* Shine effect */
+
+a[href]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 70%;
+    height: 100%;
+
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.45),
+        transparent
+    );
+
+    transform: skewX(-25deg);
+    transition: left 0.6s ease;
+    z-index: -1;
+}
+
+a[href]:hover::before {
+    left: 150%;
+}
+
+a[href]:hover {
+    transform: translateY(-5px) scale(1.03);
+}
+
+a[href]:active {
+    transform: scale(0.96);
+}
+
+
+/* 6. INTERACTIVE BOOK CARDS */
+
+.book-gallery figure {
+    background: #FFFFFF;
+    border-radius: 22px;
+    padding: 15px;
+
+    box-shadow: 0 8px 22px rgba(23, 59, 94, 0.10);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+
+    cursor: pointer;
+}
+
+.book-gallery figure:hover {
+    transform: translateY(-12px) rotate(-1deg);
+
+    box-shadow:
+        0 18px 35px rgba(23, 59, 94, 0.18),
+        0 0 0 4px rgba(255, 212, 71, 0.6);
+}
+
+.book-gallery img {
+    transition: transform 0.4s ease;
+}
+
+.book-gallery figure:hover img {
+    transform: scale(1.05);
+}
+
+
+/* 7. BEAUTIFUL IMAGE EFFECTS */
+
+figure img {
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+figure img:hover {
+    transform: scale(1.03);
+
+    box-shadow:
+        0 15px 30px rgba(23, 59, 94, 0.18);
+}
+
+
+/* 8. SECTION HEADING EFFECTS */
+
+section h1 {
+    position: relative;
+    display: inline-block;
+}
+
+section h1::after {
+    content: "";
+    display: block;
+
+    width: 65px;
+    height: 5px;
+
+    margin: 12px auto 0;
+
+    background: var(--yellow);
+    border-radius: 20px;
+
+    transition: width 0.35s ease;
+}
+
+section h1:hover::after {
+    width: 120px;
+}
+
+
+/* 9. INTERACTIVE LIST ITEMS */
+
+section li {
+    transition:
+        transform 0.25s ease,
+        color 0.25s ease;
+}
+
+section li:hover {
+    transform: translateX(8px);
+    color: var(--orange);
+}
+
+
+/* 10. FRIENDLY NAVIGATION EFFECTS */
+
+nav a {
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+nav a:hover {
+    background-color: var(--yellow);
+    color: var(--dark-blue);
+    transform: translateY(-3px);
+}
+
+
+/* 11. SCROLL REVEAL ANIMATION
+   Used with JavaScript class "reveal"
+*/
+
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* 12. IMAGE LIGHTBOX SUPPORT */
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px;
+
+    background: rgba(23, 59, 94, 0.92);
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 85vh;
+
+    object-fit: contain;
+    border-radius: 15px;
+
+    animation: imageAppear 0.3s ease;
+}
+
+@keyframes imageAppear {
+    from {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* 13. BACK TO TOP BUTTON */
+
+#backToTop {
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease;
+}
+
+#backToTop:hover {
+    transform: translateY(-6px) scale(1.08);
+    background-color: var(--blue) !important;
+}
+
+
+/* 14. SCROLL PROGRESS BAR */
+
+#scrollProgress {
+    height: 6px !important;
+    background: linear-gradient(
+        90deg,
+        var(--orange),
+        var(--yellow),
+        var(--green),
+        var(--blue)
+    ) !important;
+}
+
+
+/* 15. FOOTER EFFECTS */
+
+footer {
+    position: relative;
+    overflow: hidden;
+}
+
+footer h2 {
+    transition: transform 0.3s ease;
+}
+
+footer h2:hover {
+    transform: scale(1.05);
+}
+
+
+/* 16. RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    #home::before {
+        width: 70px;
+        height: 70px;
+    }
+
+    #home::after {
+        width: 50px;
+        height: 50px;
+    }
+
+    .book-gallery figure:hover {
+        transform: translateY(-5px);
+    }
+
+    a[href]:hover {
+        transform: translateY(-2px);
+    }
+
+}
+
+
+/* 17. MOBILE DEVICE OPTIMISATION */
+
+@media (max-width: 480px) {
+
+    section h1::after {
+        width: 45px;
+    }
+
+    .book-gallery figure {
+        max-width: 100%;
+    }
+
+}
+
+
+/* 18. ACCESSIBILITY: REDUCE MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
+
+}
+.story-decorations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin: 20px auto;
+    font-size: 35px;
+}
